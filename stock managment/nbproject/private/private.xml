@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/Users/fodil/NetBeansProjects/stock%20managment/src/BLL/BrandBLL.java</file>
+            <file>file:/Users/fodil/NetBeansProjects/stock%20managment/src/dataBase/ServerController.java</file>
+            <file>file:/Users/fodil/NetBeansProjects/stock%20managment/src/controller/application/sell/ViewSellController.java</file>
+            <file>file:/Users/fodil/NetBeansProjects/stock%20managment/src/controller/application/home/HomeController.java</file>
+            <file>file:/Users/fodil/NetBeansProjects/stock%20managment/src/controller/application/stock/AddProductController.java</file>
+            <file>file:/Users/fodil/NetBeansProjects/stock%20managment/src/StoreKeeper/FXMLDocumentController.java</file>
+            <file>file:/Users/fodil/NetBeansProjects/stock%20managment/src/DAL/SellCart.java</file>
+            <file>file:/Users/fodil/NetBeansProjects/stock%20managment/src/controller/application/sell/SellUpController.java</file>
+            <file>file:/Users/fodil/NetBeansProjects/stock%20managment/src/StoreKeeper/StoreKeeper.java</file>
+            <file>file:/Users/fodil/NetBeansProjects/stock%20managment/src/List/BeanSell.java</file>
+            <file>file:/Users/fodil/NetBeansProjects/stock%20managment/src/Getway/CurrentProductGetway.java</file>
+            <file>file:/Users/fodil/NetBeansProjects/stock%20managment/src/controller/ApplicationController.java</file>
+            <file>file:/Users/fodil/NetBeansProjects/stock%20managment/src/BLL/CurrentProductBLL.java</file>
+            <file>file:/Users/fodil/NetBeansProjects/stock%20managment/src/Getway/BrandsGetway.java</file>
+            <file>file:/Users/fodil/NetBeansProjects/stock%20managment/src/controller/application/settings/OrgSettingController.java</file>
+            <file>file:/Users/fodil/NetBeansProjects/stock%20managment/src/controller/dbConnection/ConnectToMySqlController.java</file>
+            <file>file:/Users/fodil/NetBeansProjects/stock%20managment/src/controller/application/sell/ViewCustomerController.java</file>
+            <file>file:/Users/fodil/NetBeansProjects/stock%20managment/src/dataBase/SQLightConnection.java</file>
+            <file>file:/Users/fodil/NetBeansProjects/stock%20managment/src/Getway/SellCartGerway.java</file>
+            <file>file:/Users/fodil/NetBeansProjects/stock%20managment/src/controller/application/sell/NewSellController.java</file>
+            <file>file:/Users/fodil/NetBeansProjects/stock%20managment/src/Getway/CustomerGetway.java</file>
+            <file>file:/Users/fodil/NetBeansProjects/stock%20managment/src/dataBase/DBModel.java</file>
+            <file>file:/Users/fodil/NetBeansProjects/stock%20managment/src/List/ListPreSell.java</file>
+            <file>file:/Users/fodil/NetBeansProjects/stock%20managment/src/controller/application/sell/AddCustomerController.java</file>
+            <file>file:/Users/fodil/NetBeansProjects/stock%20managment/src/dataBase/DBProperties.java</file>
+            <file>file:/Users/fodil/NetBeansProjects/stock%20managment/src/dataBase/SQL.java</file>
+            <file>file:/Users/fodil/NetBeansProjects/stock%20managment/src/StoreKeeper/PrintReport.java</file>
+            <file>file:/Users/fodil/NetBeansProjects/stock%20managment/src/BLL/SellCartBLL.java</file>
+            <file>file:/Users/fodil/NetBeansProjects/stock%20managment/src/dataBase/DBConnection.java</file>
+        </group>
+    </open-files>
+</project-private>

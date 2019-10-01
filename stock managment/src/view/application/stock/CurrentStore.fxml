@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane fx:id="spProductContent" prefHeight="580.0" prefWidth="1004.0" stylesheets="@../../../style/MainStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.application.stock.CurrentStoreController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="494.0" prefWidth="834.0">
+         <children>
+            <BorderPane layoutX="220.0" layoutY="140.0" prefHeight="479.0" prefWidth="639.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <center>
+                  <TableView fx:id="tblViewCurrentStore" editable="true" onMouseClicked="#tblViewCurrentStoreOnClick" onScroll="#tblViewCurrentStoreOnScroll" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: none; -fx-border-color: none;" tableMenuButtonVisible="true" BorderPane.alignment="CENTER">
+                    <columns>
+                      <TableColumn fx:id="tblClmProductId" prefWidth="150.0" text="ID" />
+                      <TableColumn fx:id="tblClmProductName" prefWidth="150.0" text="Nom" />
+                        <TableColumn fx:id="tblClmProductquantity" prefWidth="100.0" text="Quantité" />
+                        <TableColumn fx:id="tblClmProductUnit" prefWidth="75.0" text="Unité" />
+                        <TableColumn fx:id="tblClmProductSupplyer" prefWidth="150.0" text="Fournisseur" />
+                        <TableColumn fx:id="tblClmProductBrand" prefWidth="100.0" text="Marques" />
+                        <TableColumn fx:id="tblClmProductCatagory" prefWidth="100.0" text="Categories" />
+                        <TableColumn fx:id="tblClmProductPursesPrice" prefWidth="150.0" text="Prix d'achat" />
+                        <TableColumn fx:id="tblClmProductSellPrice" prefWidth="150.0" text="Prix de vente" />
+                        <TableColumn fx:id="tblClmProductdate" prefWidth="100.0" text="Date" />
+                        <TableColumn fx:id="tblClmProductAddBy" prefWidth="75.0" text="Ajouté par" />
+                        <TableColumn fx:id="tblClmProductdescription" prefWidth="202.0" text="Description" />
+                    </columns>
+                     <contextMenu>
+                        <ContextMenu>
+                          <items>
+                              <MenuItem mnemonicParsing="false" onAction="#btnUpdateOnAction" text="Modifier" />
+                            <MenuItem fx:id="miSellSelected" mnemonicParsing="false" onAction="#miSellSelectedOnAction" text="Sell It" />
+                          </items>
+                        </ContextMenu>
+                     </contextMenu>
+                  </TableView>
+               </center>
+               <bottom>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="66.0" prefWidth="944.0" spacing="20.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button fx:id="btnAddNew" mnemonicParsing="false" onAction="#btnAddNewOnAction" text="Nouveau produit" />
+                        <Button fx:id="btnUpdate" mnemonicParsing="false" onAction="#btnUpdateOnAction" text="Modifier" />
+                        <Button fx:id="btnDelete" mnemonicParsing="false" onAction="#btnDeleteOnAction" text="Supprimer" />
+                     </children>
+                     <BorderPane.margin>
+                        <Insets right="20.0" />
+                     </BorderPane.margin>
+                  </HBox>
+               </bottom>
+               <top>
+                  <BorderPane prefHeight="85.0" prefWidth="944.0" BorderPane.alignment="CENTER">
+                     <top>
+                        <HBox alignment="CENTER" prefHeight="44.0" prefWidth="944.0" spacing="10.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <TextField fx:id="tfSearch" onKeyReleased="#tfSearchOnKeyRelese" prefHeight="31.0" prefWidth="608.0" />
+                              <Button fx:id="btnRefresh" mnemonicParsing="false" onAction="#btnRefreshOnACtion" prefHeight="31.0" prefWidth="32.0" />
+                           </children>
+                        </HBox>
+                     </top>
+                     <center>
+                        <AnchorPane fx:id="apCombobox" BorderPane.alignment="CENTER">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="944.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <ComboBox fx:id="cbSoteViewSupplyer" onAction="#cbSoteViewSupplyerOnAction" onMouseClicked="#cbSoteViewSupplyerOnClick" prefWidth="150.0" promptText="Fournisseur" />
+                                    <ComboBox fx:id="cbSoteViewBrands" onAction="#cbSoteViewBrandOnAction" onMouseClicked="#cbSoteViewBrandOnClick" prefWidth="150.0" promptText="Marques" />
+                                    <ComboBox fx:id="cbSoteViewCatagory" onAction="#cbSoteViewCatagoryOnAction" onMouseClicked="#cbSoteViewCatagoryOnClick" prefWidth="150.0" promptText="Categories" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                     </center>
+                  </BorderPane>
+               </top>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+   <padding>
+      <Insets left="30.0" right="30.0" />
+   </padding>
+</StackPane>

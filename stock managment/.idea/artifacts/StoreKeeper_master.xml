@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="StoreKeeper-master">
+    <output-path>$PROJECT_DIR$/out/artifacts/StoreKeeper_master</output-path>
+    <root id="root">
+      <element id="archive" name="StoreKeeper_master.jar">
+        <element id="module-output" name="StoreKeeper-master" />
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/manifest.mf" output-file-name="MANIFEST.MF" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

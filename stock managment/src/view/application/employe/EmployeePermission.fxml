@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Group xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.application.employe.EmployeePermissionController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="20.0" layoutY="20.0" prefHeight="563.0" prefWidth="641.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: gray; -fx-border-style: solid; -fx-border: 2;" stylesheets="@../../../style/MainStyle.css">
+         <effect>
+            <DropShadow height="28.59" radius="14.934999999999999" width="33.15" />
+         </effect>
+         <children>
+            <GridPane layoutX="11.0" layoutY="41.0" prefHeight="117.0" prefWidth="625.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="21.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="165.0" minWidth="10.0" prefWidth="146.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="183.0" minWidth="10.0" prefWidth="166.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="173.0" minWidth="10.0" prefWidth="140.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="153.0" minWidth="10.0" prefWidth="151.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <CheckBox fx:id="cbStockManegement" mnemonicParsing="false" onAction="#cbStockOnAction" onMouseClicked="#cbSotckMangeOnClick" prefHeight="21.0" prefWidth="161.0" text="Gestion de stock" GridPane.columnSpan="3">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="cbAddProduct" mnemonicParsing="false" prefHeight="18.0" prefWidth="143.0" text="Ajouter un produit" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <CheckBox fx:id="cbAddSupplyer" mnemonicParsing="false" text="Ajouter un fournisseur" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <CheckBox fx:id="cbAddBrand" mnemonicParsing="false" text="Ajouter marques" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <CheckBox fx:id="cbAddCatagory" mnemonicParsing="false" text="Ajouter catégorie" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                  <CheckBox fx:id="cbUpdateProduct" mnemonicParsing="false" prefHeight="18.0" prefWidth="138.0" text="Modifer produit" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <CheckBox fx:id="cbUpdateSupplyert" mnemonicParsing="false" text="Modifier fournisseur" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <CheckBox fx:id="cbUpdateBrands" mnemonicParsing="false" text="Modifier marques" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                  <CheckBox fx:id="cbUpdateCatagory" mnemonicParsing="false" prefHeight="24.0" prefWidth="145.0" text="Modifier categorie" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                  <CheckBox fx:id="cbAddUnit" mnemonicParsing="false" text="Ajouter une unité" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <CheckBox fx:id="cbUpdateUnit" layoutX="31.0" layoutY="74.0" mnemonicParsing="false" text="Modifier unité" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+            <GridPane layoutX="11.0" layoutY="182.0" prefHeight="75.0" prefWidth="572.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="110.0" minWidth="10.0" prefWidth="28.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="211.0" minWidth="10.0" prefWidth="134.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="203.0" minWidth="10.0" prefWidth="125.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="187.0" minWidth="10.0" prefWidth="145.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <CheckBox fx:id="cbSellManegement" mnemonicParsing="false" onAction="#cbSellManegementOnAction" text="Gestion de la vente" GridPane.columnSpan="3">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="cbSellProduct" mnemonicParsing="false" text="Vendre un produit" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <CheckBox fx:id="cbAddCustomer" mnemonicParsing="false" text="Ajouter un client" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <CheckBox fx:id="cbUpdateCustomer" mnemonicParsing="false" text="Modifier client" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+            <GridPane layoutX="11.0" layoutY="265.0" prefHeight="75.0" prefWidth="572.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="115.0" minWidth="10.0" prefWidth="25.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="222.0" minWidth="10.0" prefWidth="148.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="220.0" minWidth="10.0" prefWidth="126.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="220.0" minWidth="10.0" prefWidth="220.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <CheckBox fx:id="cbEmployeeManegement" mnemonicParsing="false" onAction="#cbEmployeeManegementOnAction" text="Gestion des employés" GridPane.columnSpan="3">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="cbAddEmployee" disable="true" mnemonicParsing="false" text="Ajouter un employé" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <CheckBox fx:id="cbUpdateEmployee" disable="true" mnemonicParsing="false" text="Modifer employé" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <CheckBox fx:id="cbEmployePassChange" disable="true" mnemonicParsing="false" text="Changer mot de pass employé" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+            <GridPane layoutX="8.0" layoutY="349.0" prefHeight="67.0" prefWidth="459.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="16.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="204.0" minWidth="10.0" prefWidth="204.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="207.0" minWidth="10.0" prefWidth="207.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="107.0" minWidth="10.0" prefWidth="19.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <CheckBox fx:id="cbUser" indeterminate="true" mnemonicParsing="false" onAction="#cbUserOnAction" text="Utilisateurs" GridPane.columnSpan="2">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="cbChangePassword" mnemonicParsing="false" text="Changer le mot de passe" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <CheckBox disable="true" mnemonicParsing="false" selected="true" text="Changer les détails personnels" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+            <Button fx:id="btnUpdate" layoutX="259.0" layoutY="507.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" text="Modifier" />
+            <Text layoutX="165.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Autorisations utilisateur">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnClose" layoutX="630.0" layoutY="2.0" mnemonicParsing="false" onAction="#btnCloseOnClick" prefHeight="37.0" prefWidth="38.0" stylesheets="@../../../style/btnOnText.css" />
+   </children>
+</Group>
